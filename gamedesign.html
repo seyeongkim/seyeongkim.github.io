@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SEYEONG KIM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "https://s3.ap-northeast-2.amazonaws.com/portfolio37/gameprogramming_final.unity3d");
+			});
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		/*body {*/
+		/*	font-family: Helvetica, Verdana, Arial, sans-serif;*/
+		/*	background-color: white;*/
+		/*	color: black;*/
+		/*	text-align: center;*/
+		/*}*/
+		/*a:link, a:visited {*/
+		/*	color: #000;*/
+		/*}*/
+		/*a:active, a:hover {*/
+		/*	color: #666;*/
+		/*}*/
+		/*p.header {*/
+		/*	font-size: small;*/
+		/*}*/
+		/*p.header span {*/
+		/*	font-weight: bold;*/
+		/*}*/
+		/*p.footer {*/
+		/*	font-size: x-small;*/
+		/*}*/
+		div.content {
+			margin: auto;
+			width: 100%;
+		}
+		div.broken,
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.broken a,
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.broken img,
+		div.missing img {
+			border-width: 0px;
+		}
+		div.broken {
+			display: none;
+		}
+		div#unityPlayer {
+			cursor: default;
+			width: 100%px;
+		}
+		-->
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Seyeong Kim</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href=#>Award/Honor</a></li>
+							<li><a href=#>Cover Letter</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+	<div id="main">
+		<div class="inner">
+			<h1>Draw & Crack</h1>
+			<h3>October.2014 - November.2014</h3>
+			<!--<span class="image main"><%= image_tag "drawncrack1.jpg" %></span>-->
+			<div class="row uniform">
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack2.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack6.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack3.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack4.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack1.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/drawncrack5.jpg"></span></div>
+			</div>
+			<br>
+			<p>This is a tablet game for two players where you can draw walls to bounce the ball or crack other player's walls to win the game.</p>
+			<p>Tool : Processing + Java Eclipse</p>
+            <p>Co-creator: Seoha Kim</p>
+            <p><i>2014 JAVA class work, Computer Science, Sogang University</i></p>        
+        <hr>
+			<h1>Color Mix</h1>
+			<h3>2014.September - 2014.October</h3>
+			<!--<span class="image main"><%= image_tag "Remembar_Usage.jpg" %></span>-->
+			<div class="row uniform">
+				<div class="col-4"><span class="image fit"><img src = "images/colormix1.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/colormix2.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/colormix3.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/colormix4.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/colormix5.jpg"></span></div>
+				<div class="col-4"><span class="image fit"><img src = "images/colormix6.jpg"></span></div>
+			</div>
+			<br>
+			<p>This is a 3D art game. You can make new colors by combining the lights from the primary color balls(Red, Green, Blue).</p>
+			<h3>Game Video</h3>
+			<div class="videoWrapper">
+				<iframe src="https://player.vimeo.com/video/176408924" width="720" height="447" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<p><a href="https://vimeo.com/176408924">ColorMix</a> from <a href="https://vimeo.com/user29301698">SeYeong Kim</a> on <a href="https://vimeo.com">Vimeo</a>.</p>		
+			
+			<h3>Game Play</h3>
+		<div class="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+				<div class="broken">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+			<p>Tool : Unity</p>
+			<p><i>2014 Game Programming class work, Art & Technology, Sogang University.</i></p>
+		</div>
+	</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<!--<form method="post" action="#">-->
+									<div class="fields">
+                                        <ul><b>email.</b> kimseyeong93@gmail.com</ul>
+                                        <ul><b>phone.</b> +82-10-8279-7738</ul>
+                                   </div>
+			            	<!--	<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>-->
+								<!--</form>-->
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.facebook.com/srkim7733" class="icon style2 fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/young_e302/" class="icon style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/seyeongkim" class="icon style2 fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                                    <li><a href="https://twitter.com/T6RXYNA9OLTEML6" class="icon style2 fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> & Seyeong Kim</li>
+							</ul>
+						</div>
+					</footer>
+			</div>		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
